@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather app</title>
+</head>
+
+<body>
+  <main class="container">
+    <input list="cities" type="Search" id="search" name="search" placeholder="Search city" autocomplete="off">
+    <datalist id="cities">
+    </datalist>
+    <article id="current-forecast">
+      <h1 id="city-name">--</h1>
+      <p id="temp">--</p>
+      <p id="discription">--</p>
+      <p id="min-max">--</p>
+    </article>
+    <article id="hourly-forecast">
+      <h1>Hourly forecast</h1>
+      <section class="Hourly-container">
+
+      </section>
+    </article>
+    <article id="five-day-forecast">
+      <h1>5 day forecast</h1>
+      <section id="five-day-forecast-container">
+
+    </article>
+    </section>
+
+    </article>
+    <article id="feels-like">
+      <h1>Feels like</h1>
+      <p id="feels-temp">--</p>
+    </article>
+    <article id="humidity">
+      <h1>humidity</h1>
+      <p id="h_value">--</p>
+    </article>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
